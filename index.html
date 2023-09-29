@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description"
+      content="At Bake My Day you will find the most diverse recipes and preparations, making your day even more delicious. ">
+    <meta name="Authors" content="Brenda Gomes">
+    <meta name="keywords" content="Food, Recipes. ">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+     
+  
+    <script src=" https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+    <title>Bake My Day | Your digital cookbook!</title>
+  
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo" href="https://spoonacular.com/">Bake My Day!</a>
+      </nav>
+    </header>
+    <main>
+        <h2>Search for your recipes:</h2>
+        <div class="search-container">
+ 
+          <input type="text" id="search-bar" placeholder="Search...">
+          <button id="search-button" onclick="getRecipe(document.getElementById('search-bar').value)">Look for your foods!</button>
+            
+            <ul id="suggestions"></ul>
+            <div id="recipeDetails">
+             
+          </div>
+          <button id="showDetailsButton" >Show Details</button>
+          
+     
+
+        </main>
+    <footer> <P> Check the original api website: </P> <a href="https://spoonacular.com/food-api">spoonacular.com/food-api</a></footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
